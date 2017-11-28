@@ -277,8 +277,13 @@ gf
 Eltseq (gf a, int k)
 {
   gf x[m_val];
-  x[0] = a >> 6;
-  x[1] = a & (63);
+  printf("%d - ",k);
+  printf("%d - ",a);
+  x[0] = a >> gf_extd_sf;
+  printf("%d - ",x[0]);
+  x[1] = a & (field_element);
+  printf("%d - ",x[1]);
+  printf("%d\n",x[k]);
   return x[k];
 }
 //If known that m_val is not going to change as a parameter

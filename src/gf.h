@@ -25,7 +25,7 @@ typedef uint16_t gf_t;
 #define gf_ord_sf ((gf_card_sf)-1)
 
 // Define Field value
-#define u_val 64
+#define field_element 64
 // Define Poly primitive subfield: X^6 + x + 1
 #define poly_primitive_subfield 67
 
